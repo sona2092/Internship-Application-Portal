@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Add your existing styles here */
+
+        /* Form styles */
+        #apply-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        #apply-form h2 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        #apply-form label {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #0b6daa;
+        }
+
+        #apply-form input,
+        #apply-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        #apply-form button {
+            background-color: #0b6daa;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #apply-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Your Logo" style="width: 150px; height: auto;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="intern.html">Internship Roles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="apply-form">
+        <h2>Mechanical Engineer - Internship</h2>
+
+        <div id="role-info">
+            <p><b>Requirements</b></p>
+                <p>If you are a candidate who is an analytical minded and a competent Design Engineer with soft skills - then definitely apply.</p>
+            
+                <ul>
+                <li>A degree in Mechanical Engineering or any relevant field</li>
+                <li>Confident, self starter with interest to learn.</li>
+                <li>Should have passion to learn and to teach technologies.</li>
+                <li>Must be able to perform tasks under general direction.</li> 
+                <li>Ability to communicate well in English - written and oral communication</li>
+                <li>Must have a Computer, Smartphone, and uninterrupted internet connection with noise-cancellation headphones</li>
+                <li>Must be available in the virtual office every day from 1-6 pm.</li>
+
+            <p><b>This is a remote position.</b></p>
+
+            <p><b>Benefits</b></p>
+                
+                <ul>
+                    <li>Internship Completion Certificate
+                    <li>Practical experience in the Edu-Tech Industry
+                    <li>Remote work opportunity / Week work opportunity
+                    <li>Hands-on experience using Abhyaz Platform & Zoho Applications
+                    <li>Online Portfolio building</p>
+            
+        </div>
+
+        <h2>Apply Now</h2>
+        <form action="#" method="post" id="application-form">
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address-info-title">Address Information:</label>
+            City
+            <input type="text" id="city" name="city" placeholder="City">
+            Code
+            <input type="text" id="code" name="code" placeholder="Code">
+            Country
+            <input type="text" id="country" name="country" placeholder="Country">
+            State
+            <input type="text" id="state" name="state" placeholder="State">
+            Street
+            <input type="text" id="street" name="street" placeholder="Street">
+
+            <label for="education-info-title">Education Details:</label>
+            Institute Name
+            <input type="text" id="institute-name" name="institute-name" placeholder="Institute Name">
+            Department
+            <input type="text" id="department" name="department" placeholder="Department">
+            Degree
+            <input type="text" id="degree" name="degree" placeholder="Degree">
+
+            <label for="social-network-title">Social Network:</label>
+            LinkedIn Link
+            <input type="text" id="linkedin-link" name="linkedin-link" placeholder="LinkedIn Link">
+            GitHub Link
+            <input type="text" id="github-link" name="github-link" placeholder="GitHub Link">
+
+            <label for="attachments-title">Attachments:</label>
+            Photo
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            Resume
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>Contact us at: hr@abhyaz.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <p class="copyright">© 2024 Internship Opportunities</p>
+    </footer>
+
+    <script>
+        document.getElementById("application-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Add any form validation logic here
+
+            // Redirect to the confirmation page
+            window.location.href = "confirm.html";
+        });
+    </script>
+</body>
+
+</html>
